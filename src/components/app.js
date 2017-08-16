@@ -23,9 +23,9 @@ const App = () => {
 					<div id="container">
 						<Guide />
 						<Switch>
-							<Route path="/weeksort" component={WeekSort} />
-							<Route path="/week" component={WeekBudget} />
-							<Route exact path="/" component={ListCreate} />
+							<Route path={process.env.PUBLIC_URL + '/weeksort'} component={WeekSort} />
+							<Route path={process.env.PUBLIC_URL + '/week'} component={WeekBudget} />
+							<Route exact path={process.env.PUBLIC_URL + '/'} component={ListCreate} />
 						</Switch>	
 					</div>
 				</div>
