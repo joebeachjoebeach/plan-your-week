@@ -4,6 +4,7 @@ import { DropTarget } from 'react-dnd';
 import { ItemTypes } from '../helpers/constants';
 import TaskDeletable from './task-deletable';
 import TaskDraggable from './task-draggable';
+import listIcon from '../images/list.png';
 
 class AllTasks extends React.Component {
 	renderList(id) {
@@ -35,7 +36,7 @@ class AllTasks extends React.Component {
 	renderIcon() {
 		return (
 			<div id="all-tasks-empty-list">
-				<img alt="list icon" src="./images/list.png" />
+				<img alt="list icon" src={listIcon} />
 				<div id="all-tasks-empty-list-text">
 					Your list is empty.
 					<br />
