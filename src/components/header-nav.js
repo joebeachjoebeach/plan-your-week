@@ -8,17 +8,17 @@ const HeaderNav = ({ location: { pathname } }) => {
 			<NavLink
 				pathName={pathname}
 				linkName="To-do List"
-				linkPath="/"
+				linkPath={process.env.PUBLIC_URL + '/'}
 			/>
 			<NavLink
 				pathName={pathname}
 				linkName="Daily Budget"
-				linkPath="/week"
+				linkPath={process.env.PUBLIC_URL + '/week'}
 			/>
 			<NavLink
 				pathName={pathname}
 				linkName="Sort"
-				linkPath="/weeksort"
+				linkPath={process.env.PUBLIC_URL + '/weeksort'}
 			/>
 		</div>
 	);

@@ -50,18 +50,18 @@ class Guide extends React.Component {
 		let next, previous, instructions;
 
 		if (pathname === '/') {
-			next = '/week';
+			next = `${process.env.PUBLIC_URL}/week`;
 			previous = null;
 			instructions = 'Enter a task and how long you think it will take to do it.';
 		}
 		else if (pathname === '/week') {
-			next = '/weeksort';
-			previous = '/';
+			next = `${process.env.PUBLIC_URL}/weeksort`;
+			previous = `${process.env.PUBLIC_URL}/`;
 			instructions = 'Determine how much time you have each day to get things done.';
 		}
 		else if (pathname === '/weeksort') {
 			next = null;
-			previous = '/week';
+			previous = `${process.env.PUBLIC_URL}/week`;
 			instructions = 'Drag and drop each task into the day when you want to do it.';
 		}
 
