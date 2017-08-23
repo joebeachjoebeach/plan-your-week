@@ -1,5 +1,7 @@
 **Plan Your Week** is a time management desktop web-app that helps you budget your time to get things done.
 
+[use the app here](https://joebeachjoebeach.github.io/plan-your-week)
+
 I modeled this app after my method of time management: 
 - At the beginning of each week, I make a list of the things I want or need to get done that week.
 - For each thing on my list, I make an estimate of how long it'll take. 
